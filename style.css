@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#fff;background:#111}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#242424,#0d0d0d 65%);display:flex;justify-content:center}
+.app{width:min(100%,980px);padding:28px 18px 50px;text-align:center}
+h1{font-size:42px;margin:4px 0 5px}
+.sub{color:#aaa;margin:0 0 22px}
+.controls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.file-btn,button{border:0;border-radius:12px;padding:13px 20px;font-weight:800;font-size:15px;cursor:pointer}
+.file-btn{background:#fff;color:#111;display:inline-flex;align-items:center}
+.file-btn input{display:none}
+button{background:#ffca28;color:#111}
+button:disabled{opacity:.45;cursor:not-allowed}
+.status{min-height:24px;color:#bbb;margin:8px 0 12px}
+.wheel-wrap{position:relative;width:min(88vw,720px);aspect-ratio:1;margin:0 auto}
+canvas{width:100%;height:100%;display:block;filter:drop-shadow(0 12px 30px #000)}
+.pointer{position:absolute;z-index:3;top:-2px;left:50%;transform:translateX(-50%);font-size:42px;color:#ffca28;text-shadow:0 3px 5px #000}
+.result{margin:24px auto 0;padding:22px;border-radius:18px;background:#1d1d1d;width:min(100%,520px);box-shadow:0 10px 35px #0008}
+.result-title{font-size:23px;font-weight:900;margin-bottom:15px}
+.result img{display:block;width:min(100%,420px);max-height:420px;object-fit:contain;border-radius:14px;margin:auto;background:#090909}
+.result-name{font-size:18px;font-weight:700;word-break:break-word;margin:14px 0}
+.note{color:#777;font-size:13px;margin-top:25px}
+@media(max-width:600px){h1{font-size:32px}.app{padding-top:18px}.pointer{font-size:34px}}

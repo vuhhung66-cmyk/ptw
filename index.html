@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Photo Wheel 10K</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>🎡 Photo Wheel</h1>
+    <p class="sub">Tối đa 10.000 ảnh · Chọn thư mục → Quay → Nhận ảnh</p>
+
+    <section class="controls">
+      <label class="file-btn">
+        📁 Chọn thư mục ảnh
+        <input id="folderInput" type="file" accept="image/*" webkitdirectory multiple>
+      </label>
+      <button id="spinBtn" disabled>🎯 QUAY</button>
+    </section>
+
+    <div class="status" id="status">Chưa chọn ảnh</div>
+
+    <section class="wheel-wrap">
+      <div class="pointer">▼</div>
+      <canvas id="wheel" width="720" height="720"></canvas>
+    </section>
+
+    <section class="result" id="result" hidden>
+      <div class="result-title">🎉 KẾT QUẢ</div>
+      <img id="resultImage" alt="Ảnh trúng">
+      <div class="result-name" id="resultName"></div>
+      <button id="againBtn">🔄 QUAY LẠI</button>
+    </section>
+
+    <p class="note">
+      Ảnh chỉ được đọc trong trình duyệt của bạn. Không cần tải ảnh lên server.
+    </p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
